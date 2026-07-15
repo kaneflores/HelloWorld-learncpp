@@ -26,3 +26,7 @@
     ],
     "version": "2.0.0"
 }
+// insert "-ggdb", when debugging to switch build configs; or "-O2", "-DNDEBUG", for release builds. 
+// Use the debug build configuration when developing your programs. 
+// When you’re ready to release your executable to others, or want to test performance, use the release build configuration.
+//
