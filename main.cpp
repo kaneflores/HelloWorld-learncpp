@@ -18,9 +18,8 @@ int main(){ // this function's role is to ensure that the program will compile a
     cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
     cin.get();                                              // get one more char from the user (waits for user to press enter)
     //
-    
+
     return 0;
-    
 }
 
 // int main(){
