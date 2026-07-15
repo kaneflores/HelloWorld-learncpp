@@ -16,6 +16,7 @@ build configs, compiler extension, warnings and error diagnostics:
                 "-Wconversion",
                 "-Wsign-conversion",
                 "-Werror",
+                "-std=c++20", //insert if you wanna use a specific compiler
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
