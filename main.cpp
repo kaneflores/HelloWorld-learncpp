@@ -22,10 +22,10 @@ int main(){ // this function's role is to ensure that the program will compile a
     return 0;
 }
 
-// int main(){
-//     // Replace with code snippet
-//     return 0;
-// }
+int main(){
+    // Replace with code snippet
+    return 0;
+}
 
 
 /*
