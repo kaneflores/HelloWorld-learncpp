@@ -9,28 +9,23 @@ programs/projects.
 
 */
 
-// int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
-//     cout << "Hello World" << '\n'
-//         << "dont use endl anymore since it might be inefficient\n";
+int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
+    cout << "Hello World" << '\n'
+        << "dont use endl anymore since it might be inefficient\n";
     
-//     // allows the program to wait for a second input from user to evaluate for errors and longer analysis
-//     cin.clear();                                            // reset any error flags
-//     cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
-//     cin.get();                                              // get one more char from the user (waits for user to press enter)
-//     //
-
-//     return 0;
-// }
-
-int main()
-{
-    std::cout << "Enter 3 numbers: "; // ask user for a number
-    int x{}, int y{}, int z{}; // define variable x to hold user input
-    std::cin >> x >> y >> z; // get number from keyboard and store it in variable x
-    std::cout << "You entered " << x << ","<< y << '\n' << z << '\n';
+    // allows the program to wait for a second input from user to evaluate for errors and longer analysis
+    cin.clear();                                            // reset any error flags
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
+    cin.get();                                              // get one more char from the user (waits for user to press enter)
+    //
 
     return 0;
 }
+
+// int main(){
+//     // Replace with code snippet
+//     return 0;
+// }
 
 
 /*
