@@ -9,21 +9,25 @@ programs/projects.
 
 */
 
-int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
-    cout << "Hello World" << endl
-        << "Apfel" << endl;
+// int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
+//     cout << "Hello World" << endl
+//         << "Apfel" << endl;
     
-    // allows the program to wait for a second input from user to evaluate for errors and longer analysis
-    cin.clear();                                            // reset any error flags
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
-    cin.get();                                              // get one more char from the user (waits for user to press enter)
-    //
+//     // allows the program to wait for a second input from user to evaluate for errors and longer analysis
+//     cin.clear();                                            // reset any error flags
+//     cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
+//     cin.get();                                              // get one more char from the user (waits for user to press enter)
+//     //
 
-    return 0;
-}
+//     return 0;
+// }
 
-int main(){
-    // Replace with code snippet
+int main()
+{
+    int x { 5 }; // variable x defined
+    x = 7;
+    // but not used anywhere
+    cout << x << endl;
     return 0;
 }
 
