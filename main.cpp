@@ -10,8 +10,8 @@ programs/projects.
 */
 
 int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
-    cout << "Hello World" << endl
-        << "Apfel" << endl;
+    cout << "Hello World" << '\n'
+        << "dont use endl anymore since it might be inefficient\n";
     
     // allows the program to wait for a second input from user to evaluate for errors and longer analysis
     cin.clear();                                            // reset any error flags
