@@ -24,12 +24,16 @@ programs/projects.
 
 int main()
 {
-    std::cout << "Enter a number: "; // ask user for a number
+    std::cout << "Enter two numbers: ";
 
-    int x{};       // define variable x to hold user input (and value-initialize it)
-    std::cin >> x; // get number from keyboard and store it in variable x
+    int x{};
+    std::cin >> x;
 
-    std::cout << "You entered " << x << '\n';
+    int y{};
+    std::cin >> y;
+
+    std::cout << "You entered " << x << " and " << y << '\n';
+
     return 0;
 }
 
