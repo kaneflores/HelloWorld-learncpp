@@ -3,9 +3,10 @@
 using namespace std;
 
 int main(){
-    cout << 4 << ".\n"; /// this is  a literal
+    cout << "Enter a number: \n";
+    int sampleNum{214};
+    cin >> sampleNum;
 
-    int x {4};
-    cout << x << '\n'; // print the value of a variable
+    cout << sampleNum << '\n';
     return 0;
 }
