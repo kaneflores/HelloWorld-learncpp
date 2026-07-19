@@ -2,11 +2,12 @@
 
 using namespace std;
 
-int main(){
-    cout << "Enter a number: \n";
-    int sampleNum{214};
-    cin >> sampleNum;
+int main()
+{
+    std::cout << 5 << '\n'; // print the value of a literal
 
-    cout << sampleNum << '\n';
+    int x { 5 };
+    std::cout << x << '\n'; // print the value of a variable
+    (std::cout << "Hello") << "World\n";
     return 0;
 }
