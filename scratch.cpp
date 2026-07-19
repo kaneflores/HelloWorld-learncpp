@@ -9,5 +9,6 @@ int main()
     int x { 5 };
     std::cout << x << '\n'; // print the value of a variable
     (std::cout << "Hello") << "World\n";
+    std::cout << (x ) << '\n';
     return 0;
 }
