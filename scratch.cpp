@@ -2,13 +2,6 @@
 
 using namespace std;
 
-int five()
-{
-    return 5;
-
-}
-
-int main()
-{
-    
+int main(){
+    return 0;
 }
