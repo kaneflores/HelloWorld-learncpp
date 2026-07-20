@@ -2,13 +2,13 @@
 
 using namespace std;
 
+int five()
+{
+    return 5;
+
+}
+
 int main()
 {
-    std::cout << 5 << '\n'; // print the value of a literal
-
-    int x { 5 };
-    std::cout << x << '\n'; // print the value of a variable
-    (std::cout << "Hello") << "World\n";
-    std::cout << (x ) << '\n';
-    return 0;
+    
 }
