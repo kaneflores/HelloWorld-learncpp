@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
+    cout << "Enter an integer: \n";
     
-    
+
+    return 0;
 }
