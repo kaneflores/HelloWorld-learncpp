@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+    
     cout << "Enter an integer: ";
 
     int num{};
