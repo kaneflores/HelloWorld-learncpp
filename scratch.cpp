@@ -1,19 +1,7 @@
-#include <iostream>
+#include <iostream> // lib for basic input and output
 
-int return7()
-{
-    return 7;
-}
+using namespace std;
 
-int return9()
-{
-    return 9;
-}
-
-int main()
-{
-    return7();
-    9;
-
-    return 0;
+int main(){
+    
 }
