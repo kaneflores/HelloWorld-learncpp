@@ -3,12 +3,15 @@
 using namespace std;
 
 int main(){
-    
+
     cout << "Enter an integer: ";
 
-    int num{};
+    int num{}, num2{};
     cin >> num;
 
-    cout << "Double " << num << " is: " << num * 2 << '\n';
-    cout << "Triple " << num << " is: " << num * 3 << '\n';
+    cout << "Enter another integer: ";
+    cin >> num2;
+
+    cout << num << " + " << num2 << " is " << (num + num2) << ".\n";
+     cout << num << " - " << num2 << " is " << (num - num2) << ".\n";
 }
