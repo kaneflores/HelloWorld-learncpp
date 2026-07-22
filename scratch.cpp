@@ -3,14 +3,11 @@
 using namespace std;
 
 int main(){
-    cout << "Enter an integer: \n";
+    cout << "Enter an integer: ";
 
-    int num{};                                                  // define variable num as an integer variable
-    cin >> num;                                                 // get integer value from user's keyboard
+    int num{};
+    cin >> num;
 
-    cout << "Double that number is: " << num * 2 << '\n';     // then print the value of that variable here
-
-    
-
-    return 0;
+    cout << " Double " << num << " is:" << num * 2;
+    cout << " Triple " << num << " is:" << num * 3;
 }
