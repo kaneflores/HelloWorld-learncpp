@@ -2,16 +2,14 @@
 
 using namespace std;
 
+void foo2(){
+    cout << "in foo2()\n";
+}
+void foo(){
+    cout << "in foo()\n";
+    foo2();
+}
 int main(){
-
-    cout << "Enter an integer: ";
-
-    int num{}, num2{};
-    cin >> num;
-
-    cout << "Enter another integer: ";
-    cin >> num2;
-
-    cout << num << " + " << num2 << " is " << (num + num2) << ".\n";
-     cout << num << " - " << num2 << " is " << (num - num2) << ".\n";
+    foo();
+    return 0;
 }
