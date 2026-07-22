@@ -1,8 +1,14 @@
-#include <iostream> // lib for basic input and output
+#include <iostream>
 
-using namespace std;
+void multiply(int x, int y)
+{
+    return x * y;
+}
 
-int main(){
+int main()
+{
+    std::cout << multiply(4, 5) << '\n';
 
+    return 0;
 }
 
