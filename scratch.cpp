@@ -8,6 +8,6 @@ int main(){
     int num{};
     cin >> num;
 
-    cout << " Double " << num << " is:" << num * 2 << '\n';
-    cout << " Triple " << num << " is:" << num * 3;
+    cout << " Double " << num << " is: " << num * 2 << '\n';
+    cout << " Triple " << num << " is: " << num * 3 << '\n';
 }
