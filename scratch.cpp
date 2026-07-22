@@ -1,14 +1,23 @@
-#include <iostream>
+#include <iostream> // lib for basic input and output
 
-void multiply(int x, int y)
-{
-    return x * y;
+using namespace std;
+
+int getValueFromUser(){
+    cout << "Enter an integer: ";
+    int num{ };
+    cin >> num;
+    return num;
 }
 
-int main()
-{
-    std::cout << multiply(4, 5) << '\n';
+void doubleNumber(int x){
+    cout << "Doubled number of " << x << " is: " << x * 2 << '\n';
+}
+int main(){
 
+    int value{getValueFromUser()};
+    doubleNumber(value);
+
+    
     return 0;
 }
 
