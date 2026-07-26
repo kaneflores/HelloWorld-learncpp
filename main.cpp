@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>
 #include "add.h"
+#include "io.h"
 
 using namespace std;
 
@@ -9,9 +10,6 @@ This program serves as a intro to c++, and a pipeline towards more complicated
 programs/projects.
 
 */
-int readNumber();
-
-void writeAnswer(int x);
 
 
 int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
