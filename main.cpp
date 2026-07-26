@@ -9,12 +9,24 @@ This program serves as a intro to c++, and a pipeline towards more complicated
 programs/projects.
 
 */
+int readNumber(){
 
+    cout << "Enter a single integer: " << '\n';
+    int x{};
+    cin >> x;
+    
+    return x;
+
+}
+
+void writeAnswer(int x){
+    cout << "Answer is: " << x << '\n';
+}
 
 
 int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
     
-    cout << add(9,10) << '\n';
+    writeAnswer(readNumber() + readNumber());
 
 
 
