@@ -9,19 +9,9 @@ This program serves as a intro to c++, and a pipeline towards more complicated
 programs/projects.
 
 */
-int readNumber(){
+int readNumber();
 
-    cout << "Enter a single integer: " << '\n';
-    int x{};
-    cin >> x;
-    
-    return x;
-
-}
-
-void writeAnswer(int x){
-    cout << "Answer is: " << x << '\n';
-}
+void writeAnswer(int x);
 
 
 int main(){ // this function's role is to ensure that the program will compile and execute and offers an intro to simple code.
