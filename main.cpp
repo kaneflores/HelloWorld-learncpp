@@ -31,7 +31,6 @@ int main(){ // this function's role is to ensure that the program will compile a
 
 
 
-
     // allows the program to wait for a second input from user to evaluate for errors and longer analysis
     cin.clear();                                            // reset any error flags
     cin.ignore(numeric_limits<streamsize>::max(), '\n');    // ignore any characters in the input buffer until we find a newline
