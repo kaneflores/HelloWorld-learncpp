@@ -8,16 +8,16 @@
 // #endif
 //     return 0;
 // }
-#include <iostream>
+// #include <iostream>
 
-void printValue(int value)
-{
-    std::cout << value << '\n';
-}
+// void printValue(int value)
+// {
+//     std::cout << value << '\n';
+// }
 
-int main()
-{
-    printValue(5);
+// int main()
+// {
+//     printValue(5);
 
-    return 0;
-}
+//     return 0;
+// }
