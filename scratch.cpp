@@ -8,20 +8,31 @@
 // #endif
 //     return 0;
 // }
-// #include <iostream>
+#include <iostream>
 
-// void printValue(int value)
-// {
-//     std::cout << value << '\n';
-// }
+int readNumber()
+{
+	std::cout << "Please enter a number: ";
+	int x {};
+	std::cin >> x;
+	return x;
+}
 
-// int main()
-// {
-//     printValue(5);
-//     printValue(6);
-//     printValue(7);
+void writeAnswer(int x)
+{
+	std::cout << "The quotient is: " << x << '\n';
+}
 
-//     return 0;
-// }
+int main()
+{
+	int x{ };
+	int y{ };
+	x = readNumber();
+	x = readNumber();
+    writeAnswer(x+y);
+	writeAnswer(x/y);
+
+	return 0;
+}
 
 
