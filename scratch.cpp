@@ -8,29 +8,24 @@
 // // #endif
 // //     return 0;
 // // }
-// #include <iostream>
+#include <iostream>
+#include <iomanip>
+#include <climits> // for CHAR_BIT
 
-// int readNumber()
-// {
-// 	std::cout << "Please enter a number: ";
-// 	int x {};
-// 	std::cin >> x;
-// 	return x;
-// }
+int main(){
+	std::cout << " A byte is " << CHAR_BIT << " bits\n\n";
 
-// void writeAnswer(int x)
-// {
-// 	std::cout << "The quotient is: " << x << '\n';
-// }
+	std::cout << std::left; // left justify output
 
-// int main()
-// {
-// 	int x{ };
-// 	int y{ };
-// 	x = readNumber();
-// 	x = readNumber();
-//     writeAnswer(x+y);
-// 	writeAnswer(x/y);
+	std::cout << std::setw(16) << "bool:" << sizeof(bool) << " bytes\n";
+	std::cout << std::setw(16) << "char:" << sizeof(char) << " bytes\n";
+	std::cout << std::setw(16) << "short:" << sizeof(short) << " bytes\n";
+	std::cout << std::setw(16) << "int:" << sizeof(int) << " bytes\n";
+	std::cout << std::setw(16) << "long:" << sizeof(long) << " bytes\n";
+	std::cout << std::setw(16) << "long long:" << sizeof(long long) << " bytes\n";
+    std::cout << std::setw(16) << "float:" << sizeof(float) << " bytes\n";
+    std::cout << std::setw(16) << "double:" << sizeof(double) << " bytes\n";
+    std::cout << std::setw(16) << "long double:" << sizeof(long double) << " bytes\n";
 
-// 	return 0;
-// }
+	return 0;
+}

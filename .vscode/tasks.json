@@ -16,6 +16,7 @@
                 "-Werror",
                 "-std=c++20",
                 "${file}",
+                // "${fileDirname}/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -54,3 +55,7 @@
     ],
     "version": "2.0.0"
 }
+// insert "-ggdb", when debugging to switch build configs; or "-O2", "-DNDEBUG", for release builds.  IN ARGS
+// Use the debug build configuration when developing your programs. 
+// When you’re ready to release your executable to others, or want to test performance, use the release build configuration.
+//
