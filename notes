@@ -61,3 +61,4 @@ use the release build configuration. INSERT ABOVE ${FILE}
 }
 
 // "${fileDirname}/*.cpp", to run everyhting
+
