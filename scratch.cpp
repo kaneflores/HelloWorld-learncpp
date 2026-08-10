@@ -29,21 +29,20 @@
 
 // 	return 0;
 // }
+// #include <iostream>
 
-#include <iostream>
+// int main()
+// {
+//     unsigned short x{ 0 }; // smallest 2-byte unsigned value possible
+//     std::cout << "x was: " << x << '\n';
 
-int main()
-{
-    short x{ 65535 }; // largest 16-bit unsigned value possible
-    std::cout << "x was: " << x << '\n';
+//     x = -65534; // -1 is out of our range, so we get modulo wrap-around
+//     std::cout << "x is now: " << x << '\n';
 
-    x = 65536; // 65536 is out of our range, so we get modulo wrap-around
-    std::cout << "x is now: " << x << '\n';
+//     x = -2; // -2 is out of our range, so we get modulo wrap-around
+//     std::cout << "x is now: " << x << '\n';
 
-    x = 65537; // 65537 is out of our range, so we get modulo wrap-around
-    std::cout << "x is now: " << x << '\n';
-
-    return 0;
-}
+//     return 0;
+// }
 
 
