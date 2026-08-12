@@ -88,26 +88,46 @@
 
 double getDouble(){
     double x{};
+    std::cout<< "Enter a double value: ";
     std::cin >> x;
     return x;
 }
 
 char getArithSymbol(){
     char x{};
+    std::cout<< "Enter +, -, *, or /: ";
+    std::cin >> x;
     if (x == '+' || x == '-' || x == '*' || x == '/'){
-        std::cin >> x;
+        return x;
         
     }
     else{
-        std::cout << "Unsupported Operation: defaulting to +";
+        std::cout << "Unsupported Operation: defaulting to +\n";
         x = '+';
     }
         
     return x;
 }
 
+void printAnswer(double x, double y, char z){
+    if (z == '+'){
+        std::cout << x << " + " << y << " is " << x + y<<'\n';
+    }
+    else if (z == '-'){
+        std::cout << x << " - " << y << " is " << x - y<<'\n';
+    }
+    else if (z == '*'){
+        std::cout << x << " * " << y << " is " << x * y<<'\n';
+    }
+    else if (z == '/'){
+        std::cout << x << " / " << y << " is " << x / y <<'\n';
+    }
+}
 int main(){
-    
+    double x {getDouble()};
+    double y {getDouble()};
 
+    printAnswer(x, y, getArithSymbol());
 
+    return 0;
 }
