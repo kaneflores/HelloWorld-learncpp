@@ -86,17 +86,28 @@
 #include <iostream>
 #include <cstdint>
 
-int asciiCode(int a){
+double getDouble(){
+    double x{};
+    std::cin >> x;
+    return x;
+}
 
-    return a;
+char getArithSymbol(){
+    char x{};
+    if (x == '+' || x == '-' || x == '*' || x == '/'){
+        std::cin >> x;
+        
+    }
+    else{
+        std::cout << "Unsupported Operation: defaulting to +";
+        x = '+';
+    }
+        
+    return x;
 }
 
 int main(){
     
-    std::cout << "Enter a single character: ";
-    char x{};
-    std::cin >> x;
-    std::cout << "You entered '" << x << "', which has ASCII code " << asciiCode(x) << ".\n";
-        
-    return 0;
+
+
 }
