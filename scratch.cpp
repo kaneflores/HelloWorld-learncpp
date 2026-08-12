@@ -67,19 +67,52 @@
 // 	return 0;
 // }
 
+// #include <iostream>
+
+// int main(){
+//     std::cout << "Enter an integer: ";
+//     int x {};
+//     std::cin >> x;
+
+//     if (x == 0){
+//         std::cout << "The value is zero\n";
+    
+//     }
+//     else{
+//         std::cout << "The value is non-zero\n";
+//     }
+//     return 0;
+// }
+
 #include <iostream>
 
-int main(){
-    std::cout << "Enter an integer: ";
-    int x {};
-    std::cin >> x;
+bool isPrime(int x){
+    if (x<2){
+        return false;
+    }
 
-    if (x == 0){
-        std::cout << "The value is zero\n";
+    for(int i = 2; i < x; i++){
+        if (x % i == 0){
+            return false;
+        }
+    }
+    return true;
+
+}
+
+int main(){
+    while (1){
+        std::cout<< "Enter a number through 0 and 9: ";
+        int x {};
+        std::cin >> x;
+
+        if (isPrime(x)){
+            std::cout << x << " is Prime\n";
+        }
+        else{
+            std::cout << "Not Prime\n";
+        }
+    }
     
-    }
-    else{
-        std::cout << "The value is non-zero\n";
-    }
     return 0;
 }
