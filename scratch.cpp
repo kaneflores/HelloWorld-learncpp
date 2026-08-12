@@ -86,12 +86,17 @@
 #include <iostream>
 #include <cstdint>
 
-int main(){
-    while (1){std::cout << "Enter a number between 0 and 127: ";
-        std:: int8_t myInt{};
-        std::cin >> myInt;
+int asciiCode(int a){
 
-        std::cout << "You entered: " << myInt << '\n';}
+    return a;
+}
+
+int main(){
+    
+    std::cout << "Enter a single character: ";
+    char x{};
+    std::cin >> x;
+    std::cout << "You entered '" << x << "', which has ASCII code " << asciiCode(x) << ".\n";
         
     return 0;
 }
