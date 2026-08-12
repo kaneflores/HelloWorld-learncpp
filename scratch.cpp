@@ -84,50 +84,38 @@
 //     return 0;
 // }
 #include <iostream>
+#include <cmath>
 #include <cstdint>
 
-double getDouble(){
-    double x{};
-    std::cout<< "Enter a double value: ";
-    std::cin >> x;
-    return x;
+int getTowerHeight(){
+    int height{};
+    std::cout << "Enter the height of the tower in meters: ";
+    std::cin >> height;
+    return height;
 }
 
-char getArithSymbol(){
-    char x{};
-    std::cout<< "Enter +, -, *, or /: ";
-    std::cin >> x;
-    if (x == '+' || x == '-' || x == '*' || x == '/'){
-        return x;
-        
+double calculateBallHeight(double height, int seconds){
+    double fallen {9.8 * (seconds * seconds) /2};
+    double ballheight {height - fallen};
+
+    if (ballheight < 0.0){
+        return 0.0;
+    }
+    return ballheight;
+}
+
+void printResult(double ballheight, int seconds){
+    if (ballheight >0.0){
+        std::cout << "At " << seconds << " seconds, the ball is at height: " << ballheight << " meters\n";
     }
     else{
-        std::cout << "Unsupported Operation: defaulting to +\n";
-        x = '+';
-    }
-        
-    return x;
-}
-
-void printAnswer(double x, double y, char z){
-    if (z == '+'){
-        std::cout << x << " + " << y << " is " << x + y<<'\n';
-    }
-    else if (z == '-'){
-        std::cout << x << " - " << y << " is " << x - y<<'\n';
-    }
-    else if (z == '*'){
-        std::cout << x << " * " << y << " is " << x * y<<'\n';
-    }
-    else if (z == '/'){
-        std::cout << x << " / " << y << " is " << x / y <<'\n';
+        std::cout << "At " << seconds << " seconds, the ball is on the ground.\n";
     }
 }
 int main(){
-    double x {getDouble()};
-    double y {getDouble()};
+    int towerheight {getTowerHeight()};
+    printResult(calculateBallHeight(towerheight, 0),0);
+    printResult(calculateBallHeight(towerheight, 1),1);
+    printResult(calculateBallHeight(towerheight, 5),5);
 
-    printAnswer(x, y, getArithSymbol());
-
-    return 0;
 }
