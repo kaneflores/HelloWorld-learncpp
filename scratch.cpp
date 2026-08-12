@@ -84,22 +84,14 @@
 //     return 0;
 // }
 #include <iostream>
+#include <cstdint>
 
-bool isAllowedToTakeFunRide()
-{
-  std::cout << "How tall are you? (cm)\n";
+int main(){
+    while (1){std::cout << "Enter a number between 0 and 127: ";
+        std:: int8_t myInt{};
+        std::cin >> myInt;
 
-  double height{};
-  std::cin >> height;
-  return height >= 140.0;
-}
-
-int main()
-{
-  if (isAllowedToTakeFunRide())
-    std::cout << "Have fun!\n";
-  else
-    std::cout << "Sorry, you're too short.\n";
-
-  return 0;
+        std::cout << "You entered: " << myInt << '\n';}
+        
+    return 0;
 }
