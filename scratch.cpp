@@ -83,36 +83,23 @@
 //     }
 //     return 0;
 // }
-
 #include <iostream>
 
-bool isPrime(int x){
-    if (x<2){
-        return false;
-    }
+bool isAllowedToTakeFunRide()
+{
+  std::cout << "How tall are you? (cm)\n";
 
-    for(int i = 2; i < x; i++){
-        if (x % i == 0){
-            return false;
-        }
-    }
-    return true;
-
+  double height{};
+  std::cin >> height;
+  return height >= 140.0;
 }
 
-int main(){
-    while (1){
-        std::cout<< "Enter a number through 0 and 9: ";
-        int x {};
-        std::cin >> x;
+int main()
+{
+  if (isAllowedToTakeFunRide())
+    std::cout << "Have fun!\n";
+  else
+    std::cout << "Sorry, you're too short.\n";
 
-        if (isPrime(x)){
-            std::cout << x << " is Prime\n";
-        }
-        else{
-            std::cout << "Not Prime\n";
-        }
-    }
-    
-    return 0;
+  return 0;
 }
