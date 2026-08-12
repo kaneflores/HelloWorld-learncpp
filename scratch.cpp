@@ -54,15 +54,15 @@
 
 //     return 0;
 // }
-#include <iostream>
+// #include <iostream>
 
-int main()
-{
-    std::cout << std::boolalpha;
-	bool b{}; // default initialize to false
-	std::cout << "Enter a boolean value: ";
-	std::cin >> b;
-	std::cout << "You entered: " << b << '\n';
+// int main()
+// {
+//     std::cout << std::boolalpha;
+// 	bool b{}; // default initialize to false
+// 	std::cout << "Enter a boolean value: ";
+// 	std::cin >> b;
+// 	std::cout << "You entered: " << b << '\n';
 
-	return 0;
-}
+// 	return 0;
+// }
