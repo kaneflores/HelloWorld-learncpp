@@ -83,39 +83,41 @@
 //     }
 //     return 0;
 // }
-#include <iostream>
-#include <cmath>
-#include <cstdint>
+// #include <iostream>
+// #include <cmath>
+// #include <cstdint>
 
-int getTowerHeight(){
-    int height{};
-    std::cout << "Enter the height of the tower in meters: ";
-    std::cin >> height;
-    return height;
-}
+// int getTowerHeight(){
+//     int height{};
+//     std::cout << "Enter the height of the tower in meters: ";
+//     std::cin >> height;
+//     return height;
+// }
 
-double calculateBallHeight(double height, int seconds){
-    double fallen {9.8 * (seconds * seconds) /2};
-    double ballheight {height - fallen};
+// double calculateBallHeight(double height, int seconds){
+//     double fallen {9.8 * (seconds * seconds) /2};
+//     double ballheight {height - fallen};
 
-    if (ballheight < 0.0){
-        return 0.0;
-    }
-    return ballheight;
-}
+//     if (ballheight < 0.0){
+//         return 0.0;
+//     }
+//     return ballheight;
+// }
 
-void printResult(double ballheight, int seconds){
-    if (ballheight >0.0){
-        std::cout << "At " << seconds << " seconds, the ball is at height: " << ballheight << " meters\n";
-    }
-    else{
-        std::cout << "At " << seconds << " seconds, the ball is on the ground.\n";
-    }
-}
-int main(){
-    int towerheight {getTowerHeight()};
-    printResult(calculateBallHeight(towerheight, 0),0);
-    printResult(calculateBallHeight(towerheight, 1),1);
-    printResult(calculateBallHeight(towerheight, 5),5);
+// void printResult(double ballheight, int seconds){
+//     if (ballheight >0.0){
+//         std::cout << "At " << seconds << " seconds, the ball is at height: " << ballheight << " meters\n";
+//     }
+//     else{
+//         std::cout << "At " << seconds << " seconds, the ball is on the ground.\n";
+//     }
+// }
 
-}
+// void output
+// int main(){
+//     int towerheight {getTowerHeight()};
+//     printResult(calculateBallHeight(towerheight, 0),0);
+//     printResult(calculateBallHeight(towerheight, 1),1);
+//     printResult(calculateBallHeight(towerheight, 5),5);
+
+// }
