@@ -127,4 +127,4 @@ const int x {5} is a compile time constant
 int a {6}
 
 const int z {a} is a run time constant a is determined by line 127
-pass ( const int x) const declared parameter is runtime constant. has to run. 
+// pass ( const int x) const declared parameter is runtime constant. has to run. 
