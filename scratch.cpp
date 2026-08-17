@@ -1,3 +1,9 @@
+#include <iostream>
+#include <string_view>
+using namespace std::string_view_literals;
+
+int main(){
+    std::cout << "Hello, world!\n"sv;
 // // #include <iostream> // lib for basic input and output
 // // #define FOO 2
 
@@ -129,3 +135,6 @@
 // // const int z {a} is a run time constant a is determined by line 127
 // // pass ( const int x) const declared parameter is runtime constant. has to run. 
 
+    return 0;
+
+}
