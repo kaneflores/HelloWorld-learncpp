@@ -128,3 +128,20 @@
 
 // // const int z {a} is a run time constant a is determined by line 127
 // // pass ( const int x) const declared parameter is runtime constant. has to run. 
+#include <iostream>
+#include <string>
+
+int main(){
+    std::cout << "Enter your full name: ";
+    std::string name{};
+    std::getline(std::cin >> std::ws, name);
+
+    std::cout << "Enter your age: ";
+    int age{};
+    std::cin >> age;
+    
+    int nameLength { static_cast<int>(std::ssize(name)) };
+   
+    std::cout << "Your age is + length of name is: " << age + nameLength << '\n';
+
+}
