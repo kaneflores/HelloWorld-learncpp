@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string_view>
+#include <cstdint> // for std::uint8_t
 using namespace std::string_view_literals;
 
 int main(){
@@ -136,6 +137,21 @@ int main(){
 
 // // const int z {a} is a run time constant a is determined by line 127
 // // pass ( const int x) const declared parameter is runtime constant. has to run. 
+    std::cout << "How old are you? \n";
+    
+    std::uint8_t age{};
+    std::cin >> age;
+    std::cout << "Allowed to drive a car in Texas: ";
+
+    if (age >= 16){
+        std::cout << "Yes";
+    }
+    else{
+        std::cout << "No";
+
+    }
+
+    std::cout << '.\n';
 
     return 0;
 
