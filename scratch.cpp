@@ -3,6 +3,8 @@
 #include <cstdint> // for std::uint8_t
 using namespace std::string_view_literals;
 
+
+
 int main(){
     std::cout << "Hello, world!\n"sv;
     
@@ -137,21 +139,22 @@ int main(){
 
 // // const int z {a} is a run time constant a is determined by line 127
 // // pass ( const int x) const declared parameter is runtime constant. has to run. 
-    std::cout << "How old are you? \n";
+    // std::cout << "How old are you? \n";
     
-    std::uint8_t age{};
-    std::cin >> age;
-    std::cout << "Allowed to drive a car in Texas: ";
+    // int age{};
+    // std::cin >> age;
+    // std::cout << "Allowed to drive a car in Texas: ";
+    // constexpr int LEGALDRIVINGAGE {16};
+    // if (age >= LEGALDRIVINGAGE){
+    //     std::cout << "Yes";
+    // }
+    // else{
+    //     std::cout << "No";
 
-    if (age >= 16){
-        std::cout << "Yes";
-    }
-    else{
-        std::cout << "No";
+    // }
 
-    }
-
-    std::cout << '.\n';
+    // std::cout << ".\n";
+    
 
     return 0;
 
