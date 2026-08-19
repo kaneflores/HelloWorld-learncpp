@@ -16,5 +16,5 @@ int main(){
     std::cout << "int / double = " << x / static_cast<double>(y) << '\n';
     std::cout << "double / double = " << static_cast<double>(x) / static_cast<double>(y) << '\n';
 
-    
+
 }
