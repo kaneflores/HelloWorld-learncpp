@@ -11,6 +11,6 @@ int getValue(){
 }
 
 int main(){
-    (false && true) || false || true
+    (5 > 6 || 4 > 3) && (7 > 8)
     return 0;
 }
