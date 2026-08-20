@@ -11,6 +11,8 @@ int getValue(){
 }
 
 int main(){
-    
+    (true && true) || false
+    -> (true) || false
+    -> true
     return 0;
 }
