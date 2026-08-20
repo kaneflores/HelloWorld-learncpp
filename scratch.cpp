@@ -12,6 +12,5 @@ int getValue(){
 
 int main(){
     
-    
     return 0;
 }
