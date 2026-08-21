@@ -12,14 +12,19 @@ int getValue(){
 }
 
 int main(){
-    std::bitset<8> bits{0b0000'0101}; // we need 8 bits, start with bit pattern 0000 0101
-    //bits.set(3);    // set bit position 3 to 1 ( now we have 0000 1101)
-    bits.flip(4);   // flip bit 4 (now 0001 1101)
-    bits.reset(4);  // set bit 4 back to 0 ( now its 0000 1101)
+    std::bitset<0> bits{ 0 };
+    if (bits.size()>1 || bits.size() == 0){
+        std::cout << bits.size() << " bits are in the bitset\n";
+    }else{
+        std::cout << bits.size() << " bit is in the bitset\n";
+    }
+    
+    std::cout << bits.count() << " bits are set to true\n";
 
-    std::cout << "All the bits: " << bits << '\n';
-    std::cout << "Bit 3 has value: " << bits.test(3) << '\n';
-    std::cout << "Bit 4 has value: " << bits.test(4) << '\n';
+    std::cout << std::boolalpha;
+    std::cout << "All bits are true: " << bits.all() << '\n';
+    std::cout << "Some bits are true: " << bits.any() << '\n';
+    std::cout << "No bits are true: " << bits.none() << '\n';
 
     
     return 0;
