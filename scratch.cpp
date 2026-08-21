@@ -21,7 +21,7 @@ std::string_view getQuantityPhrase(int num){
         return "a couple of";
     else if (num == 3)
         return "a few";
-    return "many";
+    return "a lot";
 }
 
 std::string_view getApplesPluralized(int x){
