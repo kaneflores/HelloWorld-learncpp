@@ -6,7 +6,7 @@
 using namespace std::string_view_literals;
 
 namespace examplefunc{ // defined in the global scope
-    int examplevar{}; // defined in namespace but still global if called examplefunc::examplevar
+    int g_examplevar{}; // defined in namespace but still global if called examplefunc::examplevar
 }
 
 int getValue(){
