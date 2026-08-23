@@ -16,7 +16,6 @@ std::bitset<4> rotl(std::bitset<4> bits){
     return (bits << 1) | (bits >> 3);
 }
 int main(){
-    
 
     return 0;
 }
