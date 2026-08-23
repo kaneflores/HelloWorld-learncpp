@@ -2,6 +2,7 @@
 #include <string_view>
 #include <cstdint> // for std::uint8_t
 #include <bitset>
+#include <utility>
 using namespace std::string_view_literals;
 
 int getValue(){
@@ -18,6 +19,5 @@ std::bitset<4> rotl(std::bitset<4> bits){
 int main(){
 
 
-    
     return 0;
 }
