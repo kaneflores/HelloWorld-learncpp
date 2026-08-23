@@ -22,5 +22,6 @@ std::bitset<4> rotl(std::bitset<4> bits){
 }
 int main(){
 
+    
     return 0;
 }
