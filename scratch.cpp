@@ -37,4 +37,13 @@ int main(){
     return 0;
 }
 
+/////////////////////////////
+// #ifndef CONSTANTS_H
+// #define CONSTANST_H
+
+// namespace Constants{
+//     inline constexpr int maxClassSize {35}; // only remove inline keyword if not cpp17 capable.
+// }
+
+// #endif
 
