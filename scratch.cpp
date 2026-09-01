@@ -39,12 +39,6 @@ void foo(int x, int y){
 int main(){
     foo(4,7);
     int x{0};
-    switch(x){
-        case 1: std::cout << "One"; break;
-        case 2: std::cout << "Two"; break;
-        case 3: std::cout << "Three"; break;
-        default: std::cout << "Unknown"; break;
-    }
 
 
 
