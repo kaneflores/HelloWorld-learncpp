@@ -37,15 +37,7 @@ void foo(int x, int y){
 }
 
 int main(){
-    std::string hellostr{};
-tryAgain:
-    std::cout << "say hello: ";
-    std::cin >> hellostr;
-
-    if (hellostr != "hello")
-        goto tryAgain;
-
-    std::cout << "Hello There!";
+    
     return 0;
 }
 
