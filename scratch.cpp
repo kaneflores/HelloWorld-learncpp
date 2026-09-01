@@ -36,6 +36,36 @@ void foo(int x, int y){
     }
 }
 
+int calculate(int x, int y, char c){
+    char op{c};
+
+    int res{};
+    switch(op){
+        case '+':
+            res = x + y;
+            break;
+        case '-':
+            res = x - y;
+            break;
+        case '*':
+            res = x * y;
+            break;
+        case '/':
+            res = (x / y);
+        case '%':
+            res = (x % y);
+        default:{
+            std::cout << "Invalid operation: Please try again.";
+            char c{};
+            std::cin >> c;
+            calculate(x, y, c);
+        }
+    }
+
+
+
+
+}
 int main(){
     foo(4,7);
     int x{0};
