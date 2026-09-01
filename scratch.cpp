@@ -60,7 +60,7 @@ int calculate(int x, int y, char c){
             std::cout << "Invalid operation: Please try again: ";
             char c{};
             std::cin >> c;
-            calculate(x, y, c);
+            return calculate(x, y, c);
         }
     }
     return res;
