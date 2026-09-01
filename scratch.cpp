@@ -3,6 +3,8 @@
 #include <cstdint> // for std::uint8_t
 #include <bitset>
 #include <utility>
+
+#define PASS
 using namespace std::string_view_literals;
 
 namespace examplefunc{ // defined in the global scope
@@ -25,9 +27,17 @@ namespace constants{
     constexpr int minRideHeightCM {140};
 }
 
-int main(){
-    
+void foo(int x, int y){
+    if (x>y){
+        PASS;
+    }
+    else{
+        PASS;
+    }
+}
 
+int main(){
+    foo(4,7);
 
 
 
