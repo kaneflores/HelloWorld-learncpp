@@ -40,7 +40,7 @@ int main(){
     foo(4,7);
     int x{0};
 
-
+    
     return 0;
 }
 
