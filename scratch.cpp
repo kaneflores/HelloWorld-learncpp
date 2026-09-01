@@ -36,43 +36,16 @@ void foo(int x, int y){
     }
 }
 
-int calculate(int x, int y, char c){
-    char op{c};
-
-    int res{};
-    switch(op){
-        case '+':
-            res = x + y;
-            break;
-        case '-':
-            res = x - y;
-            break;
-        case '*':
-            res = x * y;
-            break;
-        case '/':
-            res = (x / y);
-            break;
-        case '%':
-            res = (x % y);
-            break;
-        default:{
-            std::cout << "Invalid operation: Please try again: ";
-            char c{};
-            std::cin >> c;
-            return calculate(x, y, c);
-        }
-    }
-    return res;
-
-
-
-
-}
 int main(){
-    foo(4,7);
+    std::string hellostr{};
+tryAgain:
+    std::cout << "say hello: ";
+    std::cin >> hellostr;
 
-    std::cout << calculate(5,5, 'k') << '\n';
+    if (hellostr != "hello")
+        goto tryAgain;
+
+    std::cout << "Hello There!";
     return 0;
 }
 
