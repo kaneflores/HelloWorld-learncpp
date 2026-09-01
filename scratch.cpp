@@ -52,15 +52,18 @@ int calculate(int x, int y, char c){
             break;
         case '/':
             res = (x / y);
+            break;
         case '%':
             res = (x % y);
+            break;
         default:{
-            std::cout << "Invalid operation: Please try again.";
+            std::cout << "Invalid operation: Please try again: ";
             char c{};
             std::cin >> c;
             calculate(x, y, c);
         }
     }
+    return res;
 
 
 
@@ -68,9 +71,8 @@ int calculate(int x, int y, char c){
 }
 int main(){
     foo(4,7);
-    int x{0};
 
-    
+    std::cout << calculate(5,5, 'k') << '\n';
     return 0;
 }
 
