@@ -62,20 +62,14 @@ void foo(int x, int y){
 //     }
 int main(){
     
-    int selection {};
-
-    do{
-        std::cout << "Please make a selection: \n";
-        std::cout << "1) Addition\n";
-        std::cout << "2) Subtraction\n";
-        std::cout << "3) Multiplication\n";
-        std::cout << "4) Division\n";
-        std::cin >> selection;
+    for ( int i {10}; i >= 0; --i){
+        
+        for ( int ii{0}; ii<= i; ++ii){
+            std::cout << ii << ' '; 
+        }
+        std::cout << '\n';
     }
-    while( selection < 1 || selection > 4);
-
-    std::cout << "YOu selected option: " << selection;
-
+    
     return 0;
 }
 
