@@ -71,7 +71,6 @@ int main(){
         std::cout << "3) Multiplication\n";
         std::cout << "4) Division\n";
         std::cin >> selection;
-
     }
     while( selection < 1 || selection > 4);
 
