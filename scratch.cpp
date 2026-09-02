@@ -37,8 +37,12 @@ void foo(int x, int y){
 }
 
 int main(){
-    
-    
+    int count {1};
+    while(count <=10){
+        ;
+    }
+    std::cout << "done!\n";
+
     return 0;
 }
 
