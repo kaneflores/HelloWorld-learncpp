@@ -37,11 +37,30 @@ void foo(int x, int y){
 }
 
 int main(){
-    int count {1};
-    while(count <=10){
-        ;
+    int yr{ 1990 };
+    int count{0};
+    while (yr <= 2026)
+    {
+        // print the number (pad numbers under 10 with a leading 0 for formatting purposes)
+        std::cout <<  "On year " << yr << " you are: ";
+        if (count < 10)
+        {
+            std::cout << '0';
+        }
+
+        std::cout << count << ' ' << '\n';
+
+        // if the loop variable is divisible by 10, print a newline
+        if ((count > 1) & (count % 10 == 0))
+        {;
+            // std::cout << '\n';
+        }
+
+        // increment the loop counter
+
+        ++count;
+        ++yr;
     }
-    std::cout << "done!\n";
 
     return 0;
 }
