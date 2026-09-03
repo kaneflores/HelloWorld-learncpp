@@ -61,18 +61,21 @@ void foo(int x, int y){
 //         ++yr;
 //     }
 int main(){
-    {
-    for ( int i {10}; i >= 0; --i){
-        
-        for ( int ii{0}; ii<= i; ++ii){
-            std::cout << ii << ' '; 
+    
+    for( int i{1}; i<=15; ++i){
+        if ((i%3 == 0) && (i%5 == 0)){
+            std::cout << "fizzbuzz";
+        }
+        else if (i%3 == 0){
+            std::cout << "fizz";
+        }
+        else if (i%5 == 0){
+            std::cout << "buzz";
+        }
+        else{
+            std::cout << i;
         }
         std::cout << '\n';
-    }}
-    {for (int i{ 9 }; i >= 0; --i)
-        std::cout << i << ' ';
-
-    std::cout << '\n';
     }
     
     return 0;
