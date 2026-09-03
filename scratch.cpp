@@ -62,26 +62,7 @@ void foo(int x, int y){
 //     }
 int main(){
     
-    for( int i{1}; i<=15; ++i){
 
-        bool printed
-        if ((i%3 == 0) && (i%5 == 0)){
-            std::cout << "fizzbuzz";
-        }
-        else if (i%3 == 0){
-            std::cout << "fizz";
-        }
-        else if (i%5 == 0){
-            std::cout << "buzz";
-        }
-        else if(!(i%7)){
-            std::cout << "pop";
-        }
-        else{
-            std::cout << i;
-        }
-        std::cout << '\n';
-    }
     
     return 0;
 }
