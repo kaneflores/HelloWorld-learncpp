@@ -1,11 +1,11 @@
-#include <iostream>
-#include <string_view>
-#include <cstdint> // for std::uint8_t
-#include <bitset>
-#include <utility>
+// #include <iostream>
+// #include <string_view>
+// #include <cstdint> // for std::uint8_t
+// #include <bitset>
+// #include <utility>
 
-#define PASS
-using namespace std::string_view_literals;
+// #define PASS
+// using namespace std::string_view_literals;
 
 // namespace examplefunc{ // defined in the global scope
 //     int g_examplevar{}; // defined in namespace but still global if called examplefunc::examplevar
@@ -67,60 +67,44 @@ using namespace std::string_view_literals;
 //     return 0;
 // }
 
-namespace Constants{
-    constexpr double gravity {9.8};
-}
+#undef NDEBUG
+#include <cassert> // for assert
+#include <iostream>
 
-// Gets tower height from user and returns it
-double getTowerHeight(){
-    std::cout << "Enter the height of the tower in meters: ";
-    double towerHeight{};
-    std::cin >> towerHeight;
-    return towerHeight;
-}
-
-//Return the current ball height after "seconds" seconds
-double calculateBallHeight(double towerHeight, int seconds){
-
-    // Using formula: s = (u * t) + (a * t^2) / 2
-	// here u (initial velocity) = 0, so (u * t) = 0
-    const double fallDistance {Constants::gravity * (seconds * seconds) / 2.0};
-    const double ballHeight {towerHeight - fallDistance};
-
-    // If the ball would be under the ground, place it on the ground
-    if (ballHeight < 0.0){
-        return 0.0;
+bool isPrime(int x){
+    if (x<=1){
+        return false; // less than 1 so, not prime, has to be greater than 1 and only divisible by 1 and itself;
     }
 
-    return ballHeight;
-}
-
-void printBallHeight(double ballHeight, int seconds){
-
-    if (ballHeight > 0.0){
-        std::cout << "At " << seconds << " seconds, the ball is at height: " << ballHeight << " meters\n";
+    for (int i{2}; i < x; ++i){
+        if(x % i == 0){
+            return false; // x is divisible by another number other than 1;
+        }
     }
-    else{
-        std::cout << "At " << seconds << " seconds, the ball is on the ground.\n";
-    }
+    return true;
+}
+int main()
+{
+    assert(!isPrime(0)); // terminate program if isPrime(0) is true
+    assert(!isPrime(1));
+    assert(isPrime(2));  // terminate program if isPrime(2) is false
+    assert(isPrime(3));
+    assert(!isPrime(4));
+    assert(isPrime(5));
+    assert(isPrime(7));
+    assert(!isPrime(9));
+    assert(isPrime(11));
+    assert(isPrime(13));
+    assert(!isPrime(15));
+    assert(!isPrime(16));
+    assert(isPrime(17));
+    assert(isPrime(19));
+    assert(isPrime(97));
+    assert(!isPrime(99));
+    assert(isPrime(13417));
+
+    std::cout << "Success!\n";
+
+    return 0;
 }
 
-// Calculates the current ball height and then prints it
-// This is a helper function to make it easier to do this
-double calculateAndPrintBallHeight(double towerHeight, int seconds){
-    const double ballHeight{calculateBallHeight(towerHeight, seconds)};
-    printBallHeight(ballHeight, seconds);
-
-    return ballHeight;
-}
-
-int main(){
-    const double towerHeight{ getTowerHeight()};
-
-    int seconds {0};
-    while(calculateAndPrintBallHeight(towerHeight, seconds) > 0.0){
-        ++seconds;
-    }
-
-	return 0;
-}
