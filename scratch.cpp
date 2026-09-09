@@ -62,6 +62,8 @@ void foo(int x, int y){
 //     }
 int main(){
     
+    using PrintError = int;
+    PrintError printData();
 
     
 
