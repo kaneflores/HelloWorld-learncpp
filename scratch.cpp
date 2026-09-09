@@ -62,7 +62,7 @@ void foo(int x, int y){
 //     }
 int main(){
     
-qu
+q
 
 
     return 0;
