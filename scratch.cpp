@@ -76,6 +76,3 @@ int main(){
 }
 
 
-auto sub(auto x, auto y){
-    return x - y;
-}
