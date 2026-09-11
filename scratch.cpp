@@ -60,8 +60,12 @@ void foo(int x, int y){
 //         ++count;
 //         ++yr;
 //     }
+template <typename PH>
+PH max(PH x, PH y){
+    return (x < y) ? y : x;
+}
 int main(){
-    
+    std::cout << max<double>(1,2);
 
 
     return 0;
