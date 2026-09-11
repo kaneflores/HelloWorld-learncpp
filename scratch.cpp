@@ -75,3 +75,7 @@ int main(){
     return 0;
 }
 
+
+auto sub(auto x, auto y){
+    return x - y;
+}
