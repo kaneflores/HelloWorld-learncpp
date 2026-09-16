@@ -70,28 +70,7 @@ int main(){
     std::cout << max<double>(1,2);
 
 
-    int* ptr {&x};
-    std::cout << *ptr;
-
-    *ptr = 7;
-    std::cout << x
-
-
-    0012FF60
-    7
-    0012FF60
-    7
-    0012FF60
-    9
-    0012FF60
-    9
-
-    0012FF54
-    3
-    0012FF54
-    3
-     
-    4
+    
 
 
     return 0;
