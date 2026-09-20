@@ -64,7 +64,13 @@ template <typename PH>
 PH max(PH x, PH y){
     return (x < y) ? y : x;
 }
-
+enum MonsterType{
+    orc,
+    goblin,
+    troll,
+    ogre,
+    skeleton,
+};
 
 int main(){
     std::cout << max<double>(1,2);
