@@ -72,12 +72,64 @@ int main(){
 
 
 
-    
+
 
     
     return 0;
 }
 
+enum class Animal{
+    pig,
+    chicken,
+    goat,
+    cat,
+    dog,
+    duck,
+};
+
+void printNumberOfLegs(Animal animal){
+    std::cout << "A " << getAnimalName(animal) << " has ";
+    using enum Animal;
+    switch(animal){
+        case pig:
+        case goat:
+        case cat:
+        case dog:
+            std::cout << 4;
+
+        case chicken:
+        case duck:
+            std::cout << 2;
+        default:    std::cout << "????"; break;
+    }
+
+    std::cout << " legs."
+
+
+}
+constexpr std::string_view getAnimalName(Animal name){
+    using enum Animal;
+
+    switch(name){
+        case pig:       return "pig";
+        case chicken:   return "chicken";
+        case goat:      return "goat";
+        case cat:       return "cat";
+        case dog:       return "dog";
+        case duck:      return "duck";
+
+        default:    return "unknown animal";
+    }
+
+}
+
+int main(){
+    Animal name{Animal::cat};
+    Animal name2{Animal::chicken};
+
+    printNumberOfLegs(name);
+    printNumberOfLegs(name2);
+}
 
 
 
