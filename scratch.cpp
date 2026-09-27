@@ -87,7 +87,20 @@ struct adInfo{
 
 };
 
-adInfo printAdInfo(){
+adInfo getAdInfo(){
     adInfo temp {};
-    std::cout << "How many ads were shown today"
+    std::cout << "How many ads were shown today? ";
+    std::cin >> temp.adsWatched;
+    std::cout << "What percentage of ads were clicked on by users? ";
+    std::cin >> temp.adsclickPercentage;
+    std::cout << "What was average earnings per click? ";
+    std::cin >> temp.adsAvgEarnings;
+
+    return temp;
+}
+
+void printAdInfo(const adInfo& ad){
+    std::cout << "Number of ads shown: " << ad.adsWatched << '\n';
+    std::cout << "Click through rate: " << ad.adsclickPercentage << '\n';
+    std::cout << "Average earnings per click: $" << ad.adsAvgEarnings << '\n';
 }
