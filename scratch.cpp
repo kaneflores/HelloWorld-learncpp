@@ -78,29 +78,32 @@ int main(){
     return 0;
 }
 
-
-
-struct adInfo{
-    int adsWatched {0};
-    double adsclickPercentage {0.0};
-    double adsAvgEarnings {0.0};
-
+struct Fraction{
+    int numerator {};
+    int denominator {1};
 };
 
-adInfo getAdInfo(){
-    adInfo temp {};
-    std::cout << "How many ads were shown today? ";
-    std::cin >> temp.adsWatched;
-    std::cout << "What percentage of ads were clicked on by users? ";
-    std::cin >> temp.adsclickPercentage;
-    std::cout << "What was average earnings per click? ";
-    std::cin >> temp.adsAvgEarnings;
+Fraction createFractionObject(){
+    Fraction temp {};
+    std::cout << "Enter a value for the numerator: ";
+    std::cin >> temp.numerator;
+    std::cout << "Enter a value for the denominator: ";
+    std::cin >> temp.denominator;
 
     return temp;
 }
 
-void printAdInfo(const adInfo& ad){
-    std::cout << "Number of ads shown: " << ad.adsWatched << '\n';
-    std::cout << "Click through rate: " << ad.adsclickPercentage << '\n';
-    std::cout << "Average earnings per click: $" << ad.adsAvgEarnings << '\n';
+constexpr Fraction multiply(const Fraction& f1, const Fraction& f2){
+    return {f1.numerator * f2.numerator, f2.denominator * f1.denominator};
+}
+
+void printFraction(const Fraction& f){
+    std::cout << f.numerator << "/" << f.denominator;
+}
+
+int main(){
+    Fraction obj1 {createFractionObject()};
+    Fraciton obj2 {createFractionObject()};
+
+    printFraction(multiply((obj1, obj2));
 }
