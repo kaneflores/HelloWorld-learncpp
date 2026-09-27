@@ -79,3 +79,15 @@ int main(){
 }
 
 
+
+struct adInfo{
+    int adsWatched {0};
+    double adsclickPercentage {0.0};
+    double adsAvgEarnings {0.0};
+
+};
+
+adInfo printAdInfo(){
+    adInfo temp {};
+    std::cout << "How many ads were shown today"
+}
