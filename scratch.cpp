@@ -77,33 +77,3 @@ int main(){
     
     return 0;
 }
-
-struct Fraction{
-    int numerator {};
-    int denominator {1};
-};
-
-Fraction createFractionObject(){
-    Fraction temp {};
-    std::cout << "Enter a value for the numerator: ";
-    std::cin >> temp.numerator;
-    std::cout << "Enter a value for the denominator: ";
-    std::cin >> temp.denominator;
-
-    return temp;
-}
-
-constexpr Fraction multiply(const Fraction& f1, const Fraction& f2){
-    return {f1.numerator * f2.numerator, f2.denominator * f1.denominator};
-}
-
-void printFraction(const Fraction& f){
-    std::cout << f.numerator << "/" << f.denominator;
-}
-
-int main(){
-    Fraction obj1 {createFractionObject()};
-    Fraciton obj2 {createFractionObject()};
-
-    printFraction(multiply((obj1, obj2));
-}
