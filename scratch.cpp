@@ -80,3 +80,10 @@ int main(){
 
 
 
+
+
+struct Chicken{
+    std::string_view name{"chicken"};
+    int numlegs{2};
+
+};
