@@ -91,7 +91,11 @@ struct IntPair{
     int second{};
 
     void print(){
-        std::cout << 
+        std::cout << "Print something here";
+    }
+
+    void isEqual(IntPair a){
+        return (first == a.first) && (second == a.second);
     }
 };
 
